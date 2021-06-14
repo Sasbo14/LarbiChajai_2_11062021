@@ -42,21 +42,213 @@ table {
         border-spacing: 0;
 }
 
-/* Header */
+
+/******début********/
 
 body
 {
     font-family: 'Raleway', sans-serif;
 }
 
+
+
+/******header*******/
+
 #logo
 {
-    width: 200px;
-	height: 100px;
+    width: 120px;
+	height: 50px;
+    margin: 20px;
 }
+
 
 h1
 {
-    font-weight: bold;
+    display: flex;
+    width: 60%;
+    margin: 10px;
 }
 
+#para_header
+{
+    margin: 20px;
+}
+
+/*******menu**********/
+
+.navheader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid red;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+
+
+nav li
+{
+    margin-right: 50px;
+}
+
+
+#navbar_logo
+{
+    border: solid blue;
+}
+
+#navbar_menu
+{
+   
+    margin-left:70%;
+    border:solid black;
+
+}
+
+#navbar_register
+{
+
+    margin-right: 150px;
+    border:solid green;
+}
+
+.navbar_link_register
+{
+    color:#0065FC;
+    font-weight: bold;
+
+}
+
+
+
+
+/**********mise en forme des liens**************/
+
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.navbar_link:hover
+{
+    color: #0065FC;
+    border-top: solid #0065FC;
+}
+
+
+/************** mobile et tablette****************/
+@media screen and (max-width: 375px)
+{
+.navbar_link:hover
+{
+        color: #0065FC;
+        border-bottom: solid #0065FC;
+        border-top:solid white;
+}
+     
+    
+h1
+{
+    font-size: 1.5em;
+    color: black;    
+    font-weight: 1000;
+    text-align: left;
+    /*display: flex;
+    justify-content: space-around;*/
+}
+
+.navheader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: solid red;
+    width: 97%;
+}
+
+#navbar_logo
+{
+        margin: 0 auto;
+        width: 99%;
+        border: solid blue;
+}
+
+  
+#navbar_register
+{
+    border: solid green;
+    position:absolute;
+    right: 0;
+    top: 40px;
+    margin-right: 50px;
+}
+
+
+
+#navbar_menu
+{
+    display: flex;
+    margin-left: 0%;
+    justify-content:center;
+    width:100%;
+    border:solid black;
+
+}
+
+
+.navbar_link_register
+{
+    color:#0065FC;
+    font-weight: bold;
+    width: 100px;
+    
+}
+
+}
+
+/*************agrandit la police du menu en mobile***********/
+/*.navbar_link
+{
+        font-size: 1em;
+        margin-left: 40px;
+        justify-content: space-between;
+}*/
+    
+    
+/**********survol des liens en mobile***********************/
+/*a:hover
+{
+    border-bottom: 2px solid #0065FC;
+}*/
+
+
+/*#boutton_inscrire
+{
+    color:#0065FC;
+    font-weight: bold;
+    width: 100px;
+    position:absolute;
+    right: 0px;
+    top: 40px;
+}*/
+
+
+
+/***************responsiv design du header vers le desktop****************/
+
+@media screen and (min-width: 1280px)
+{
+
+    
+    /*a:hover
+    {
+    border-top: 2px solid #0065FC;
+    }*/
+}
