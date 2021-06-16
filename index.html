@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a8474f7b94.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/8219944b15.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -23,37 +23,54 @@
                         <img id="logo" src="images/logo/Reservia@3x.png" alt="logo">
                     </p>
                 
-                    <div id="navbar_menu">
-                        <ul>
-                            <li><a class="navbar_link" href="#accomodation">Hébergements</a></li>
-                            <li><a class="navbar_link" href="#activities">Activités</a></li>
-                        </ul>
-                    </div>
+                    <div id="navbar">
+                        <div id="navbar_menu1">
+                            <a class="navbar_link1" href="#accomodation">Hébergements</a>
+                        </div>
+                        
+                        <div id="navbar_menu2">
+                            <a class="navbar_link2" href="#activities">Activités</a>
+                        </div>
 
-                    <div id="navbar_register">
-                        <a class="navbar_link_register" href="#">S'inscrire</a>
+                        <div id="navbar_register">
+                            <a class="navbar_link_register" href="#">S'inscrire</a>
+                        </div>
                     </div>
                     
                 </div>   
-                
-           
-                
             </nav>
-
-            <h1 class="big_title">Trouver votre hébergement pour des vacances de rêve</h1>
-            
-            <p id="para_header">
-                En plein centre ville ou en pleine nature
-            </p>
         </header>
         
+        <main>
 
+            <div class="info">
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            
+                <p id="para_header">
+                En plein centre ville ou en pleine nature
+                </p>
+            </div>
+
+        </main>
+      
+
+   <!----Barre de recherche------>     
         
-        <section class="search_bar">
-        <div><i class="fa-solid fa-location-dot"></i><input type="search" /></div>
-        <div></div>
-        <div></div>
-        </section>
+   
+        <form class="search_bar">
+            
+            <label class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </label>
+            <input type="search" placeholder="Marseille, France" class="input_search_bar">
+
+            <button class="logo_search" type="button">
+               Rechercher
+               <i class="fas fa-search info-img-search"></i>
+            </button>
+
+
+        </form>
 
         
         <section id="accomodation">
@@ -64,7 +81,7 @@
             
         </section>
 
-        <section id="">
+        <section id="most_popular">
             
         </section>
     </div>
