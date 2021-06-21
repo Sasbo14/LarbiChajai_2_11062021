@@ -31,12 +31,12 @@
                 
                 <nav>   
                     
-                    <div id="navbar_menu">
+                    <!---<div id="navbar_menu">----->
                         <ul>
                             <li><a class="navbar_link1" href="#accomodation">Hébergements</a></li>
                             <li><a class="navbar_link2" href="#activities">Activités</li>
                         </ul>
-                    </div>
+                    
                     
                 </nav>
    
@@ -57,21 +57,54 @@
       
    <!----Barre de recherche------>     
         
-            <form class="search_bar">
+            <form id="search_bar">
             
                 <label class="icon">
                     <i class="fas fa-map-marker-alt"></i>
                 </label>
-                <input type="search" placeholder="Marseille, France" class="input_search_bar">
+                <input type="search" placeholder="Marseille, France" id="input_search_bar">
 
-                <button class="logo_search" type="button">
-                    <span class="search_button">Rechercher</span>
+               
+                <button id="search_button" type="button">
+                    <span id="span_search_button">Rechercher</span>
                     <i class="fas fa-search info-img-search" ></i>
                 </button>
-
-
             </form>
 
+
+    <!-----Filtres------------>
+            <section id="info_filter">
+                
+                 <h2>Filtres</h2>
+                <div id="filter_content">
+                    
+                    <div class="content1">
+                        <button id="economic_button_" type="button">
+                            <i class="fas fa-money-bill-wave blue fa-lg"></i>
+                        Économique
+                        </button>
+                        <button id="family_button" type="button">
+                            <i class="fas fa-child blue fa-lg" ></i>
+                        Familial
+                        </button>
+                    </div>
+                    
+                    <div class="content2">
+                        <button id="romantic_button" type="button">
+                            <i class="fas fa-heart blue fa-lg" ></i>
+                            Romantique
+                        </button>
+                        <button id="button_pets_allowed" type="button">
+                            <i class="fas fa-dog blue fa-lg" ></i>
+                            Animaux autorisés
+                        </button>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </section>
         
             <section id="accomodation">
 
