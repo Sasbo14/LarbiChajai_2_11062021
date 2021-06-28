@@ -7,10 +7,10 @@
         <meta name="description" content="trouver des hébergements et des activités dans la ville de votre choix.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/8219944b15.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link type="text/css" rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+        <link type="text/css" rel="preconnect" href="https://fonts.gstatic.com">
+        <link type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
         
     </head>
@@ -33,7 +33,7 @@
                 <nav>   
                     
                         <ul>
-                            <li><a href="#accomodation"class="navbar_link1">Hébergements</a></li>
+                            <li><a href="#accomodation" class="navbar_link1">Hébergements</a></li>
                             <li><a href="#activities" class="navbar_link2">Activités</a></li>
                         </ul>
                     
@@ -41,16 +41,14 @@
                 </nav>
    
         </header>
-        
-      
 
-            <div class="info">
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            
-                <p id="para_header">
-                En plein centre ville ou en pleine nature
-                </p>
-            </div>
+        <div class="info">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        
+            <p id="para_header">
+            En plein centre ville ou en pleine nature
+            </p>
+        </div>
 
         
        
@@ -80,31 +78,34 @@
             <br>
                
             <div id="filter_content">
+
+                <div id="filter_title">
                     
-                <h2>Filtres</h2>
-                <br>
-                    
-                <div class="content1">
-                    <button id="economic_button" type="button">
-                        <i class="fas fa-money-bill-wave blue fa-lg eco_icon"></i>
-                    <span id="span_eco">Économique</span>
-                    </button>
-                    <button id="family_button" type="button">
-                        <i class="fas fa-child blue fa-lg family_icon" ></i>
-                        <span id="span_family">Familial</span>
-                    </button>
+                    <h2>Filtres</h2>
                 </div>
                     
-                <div class="content2">
-                    <button id="romantic_button" type="button">
-                            <i class="fas fa-heart blue fa-lg romantic_icon" ></i>
-                            <span id="span_romantic">Romantique</span>
+               
+                <div id="filter_buttons">
+                    <button class="button_forma eco" type="button">
+                        <i class="fas fa-money-bill-wave blue fa-lg filter_icon"></i>
+                        <span class="span_filter_icon">Économique</span>
                     </button>
-                    <button id="button_pets_allowed" type="button">
-                            <i class="fas fa-dog blue fa-lg pets_icon" ></i>
-                            <span id="span_pets">Animaux autorisés</span>
+                    
+                    <button class="button_forma family" type="button">
+                        <i class="fas fa-child blue fa-lg filter_icon" ></i>
+                        <span class="span_filter_icon">Familial</span>
                     </button>
-                        
+                    
+                    <button class="button_forma romantic" type="button">
+                        <i class="fas fa-heart blue fa-lg filter_icon" ></i>
+                        <span class="span_filter_icon">Romantique</span>
+                    </button>
+                
+                    <button class="button_forma pets"  type="button">
+                        <i class="fas fa-dog blue fa-lg filter_icon" ></i>
+                        <span class="span_filter_icon">Animaux autorisés</span>
+                    </button>
+
                 </div>
                     
                     
@@ -212,13 +213,13 @@
        
                 <section id="accomodation">
                     
-                    <h2 id="accomodation_title">Hébergements à Marseille</h2>
+                    <h2>Hébergements à Marseille</h2>
 
                     <div id="accomodation_cards">
                         
-                        <div id="accommodation_cards_line1">
+                        <div class="accommodation_cards">
                             
-                            <div id="accomodation_card1">
+                            <div class="accomodation_img_description_card">
                                 <a class="link_card_accomodation" href="#" >
                                     <div class="card_accomodation_img">
                                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'auberge La Cannebière">
@@ -241,7 +242,7 @@
                                 </a>
                             </div>
                             
-                            <div id="accomodation_card2">
+                            <div class="accomodation_img_description_card">
                                 <a class="link_card_accomodation" href="#" >
                                     <div class="card_accomodation_img">
                                         <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo Hôtel du port">
@@ -265,7 +266,7 @@
                                 </a>
                             </div>
     
-                            <div id="accomodation_card3">
+                            <div class="accomodation_img_description_card">
                                 <a class="link_card_accomodation" href="#" >
                                     <div class="card_accomodation_img">
                                         <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo hôtel Les mouettes">
@@ -291,9 +292,9 @@
 
                         </div>
 
-                        <div id="accommodation_cards_line2">
+                        <div class="accommodation_cards">
 
-                            <div id="accomodation_card4">
+                            <div class="accomodation_img_description_card">
                                 <a class="link_card_accomodation" href="#" >
                                     <div class="card_accomodation_img">
                                         <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo Hôtel de la mer">
@@ -318,7 +319,7 @@
                                 </a>
                             </div>
                             
-                            <div id="accomodation_card5">
+                            <div class="accomodation_img_description_card">
                                 <a class="link_card_accomodation" href="#" >
                                     <div class="card_accomodation_img">
                                         <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo auberge le panier">
@@ -343,7 +344,7 @@
                                 </a>
                             </div>
     
-                            <div id="accomodation_card6">
+                            <div class="accomodation_img_description_card">
                                 <a class="link_card_accomodation" href="#" >
                                     <div class="card_accomodation_img">
                                         <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo hôtel chez Amina">
@@ -451,7 +452,7 @@
                             </div>
 
                             <div class="activity_title_cards">
-                                <h3>parc national des Calanques</h3>
+                                <h3>Parc national des Calanques</h3>
                             </div>
 
                         </a>
@@ -502,6 +503,36 @@
             
         
         </main>
+        
+        <footer>
+        
+            <section class="footer-about">
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-acomodation">
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-assistance">
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </section>
+
+        </footer>
+     
   
     </body>
 </html>
