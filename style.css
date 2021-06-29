@@ -70,8 +70,7 @@ header
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    /*padding-top: 20px;*/
-    height: 50px;
+    height: 100%;
 }
 
 
@@ -86,8 +85,8 @@ header
 /*************Menu du header************************************/
 
 nav{
-    border: solid yellow;
     width: 75%;
+    height: 100%;
     padding-right: 20px;
     display: flex;
     justify-content: flex-end;
@@ -96,18 +95,17 @@ nav{
 
 nav ul
 {
-    border: solid blue;
     display:flex;
-    justify-content: flex-end;
-    justify-content: space-around;
+    /*justify-content: flex-end;
+    justify-content: space-around;*/
     padding-right: 80px;
 }
 
-
 nav li
 {
-    border:solid red;
     margin-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #navbar_register
@@ -133,17 +131,16 @@ a
     font-size: 1.2em;
 }
 
-.navbar_link1:hover
+a:hover
 {
-    color: #0065FC;
-    border-top: 2px solid #0065FC; 
+    color:#0065FC;
 }
 
-
-.navbar_link2:hover
+nav li:hover
 {
     color: #0065FC;
     border-top: 2px solid #0065FC;
+    /*padding-top: 25px;*/
 }
 
 /******************MAIN***************************/
@@ -160,6 +157,7 @@ h1
 {
    margin-top: 10px;
    margin-left: 40px;
+   margin-bottom: 20px;
 }
 
 /**************BARRE DE RECHERCHE Desktop***************/
@@ -181,6 +179,8 @@ h1
     width: 10%;
     background-color: #F2F2F2;
     border: solid #F2F2F2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -239,13 +239,16 @@ h1
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #filter_title
 {
     margin-left: 40px;
+    margin-right: 35px;
     color:black;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 #filter_buttons
@@ -260,15 +263,6 @@ button
     background: transparent;
 }
 
-/*#button_filter
-{
-    border: solid red;
-    display: flex;
-    flex-wrap: wrap;
-    width: 95%;
-}*/
-
-
 /**********************Mise en forme du filtre***************************/
 
 .button_forma
@@ -276,16 +270,24 @@ button
     border: 4px solid #F2F2F2;
     border-radius: 40px;
     border-top-left-radius: solid white;
-    border-bottom-left-radius: transparent;
+    border-bottom-left-radius: solid transparent;
     border-left: none;
     color: black;
     font-weight: 600;
     font-size: 1.1em;
     margin-left: 10px;
-    margin-right: 30px;
+    margin-right: 15px;
     display:flex;
     align-items: center;
-    height: 60px;
+    height: 55px;
+    transition: 1s;
+}
+
+.button_forma:hover
+{
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
 }
 
 .filter_icon
@@ -355,15 +357,15 @@ button
     background-color: #F2F2F2;
     border: solid #F2F2F2;
     border-radius: 20px;
-    width: 25%;
-    height: 619px;
+    width: 38%;
+    height: 700px;
     display: block;
 }
 
 #most_popular_title
 {
     margin-bottom: 30px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-left: 30px;
     color:black;
     font-weight: bold;
@@ -371,9 +373,9 @@ button
     justify-content: space-between;
 }
 
-.most_popular_icon
+.most_popular_icon_title
 {
-    margin-right: 15px;
+    margin-right: 50px;
 }
 
 #most_popular_cards
@@ -390,33 +392,42 @@ button
     background-color: white;
     display: flex;
     flex-direction: row;
-    width: 95%;
-    height: 130px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    width: 85%;
+    height: 170px;
+    /*margin-top: 10px;*/
+    margin-bottom: 30px;
+    margin-left: 30px;
+
 }
 
 .card_popular_img img
 {
-    width: 110px;
-    height: 125px;
     border: solid white;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
+    width: 140px;
+    height: 165px;
 }
 
 .card_description
 {
-width: 50%;
+width: 45%;
 margin-top: 10px;
 margin-left: 10px;
 }
 
-.card_info h3
+.card_info_popular h3
 {
 font-weight: bold;
 font-size: 0.9em;
+white-space: normal;
+}
+
+.card_info_popular p
+{
+    margin-top: 10px;
+    font-size: 0.9em;
 }
 
 .card_info p
@@ -425,12 +436,12 @@ margin-top: 10px;
 font-size: 0.9em;
 }
 
-
-.card_star
+.card_star_popular
 {
-color: #0065FC;
-margin-top: 35px;
-font-size: 0.8em;
+    color: #F2F2F2;
+    font-size: 1em;
+    padding-bottom: 10px;
+    margin-top: auto;
 }
 
 /*********************SECTION HEBERGEMENTS*******************/
@@ -438,13 +449,13 @@ font-size: 0.8em;
 #accomodation
 {
     padding-top: 40px;
-    padding-bottom: 30px;
     margin-top: 40px;
     margin-right: 30px;
     background-color: #F2F2F2;
     border: solid #F2F2F2;
     border-radius: 20px;
-    width: 70%;
+    width: 56%;
+    height: 700px;
 }
 
 #accomodation h2
@@ -456,20 +467,16 @@ font-size: 0.8em;
     font-weight: bold;
 }
 
-.accommodation_cards
+#accomodation_card
 {
     display: flex;
-    /*width: 100%;*/
-    /*padding-top: 20px;*/
-    border: solid red;
-    height: 300px;
-    padding-left: 50px;
+    flex-wrap: wrap;
 }
 
 .accomodation_img_description_card
 {
     display: block;
-    width: 90%;
+    width: 32%;
 }
 
 .link_card_accomodation
@@ -482,8 +489,9 @@ font-size: 0.8em;
     box-shadow: 5px 5px 20px gainsboro;
     background-color: white;
     width: 90%;
-    height: 270px;
-    /*margin-left: 60px;*/
+    height: 240px;
+    margin-left: 40px;
+    margin-bottom: 30px;
 }
 
 .card_accomodation_img
@@ -492,13 +500,15 @@ font-size: 0.8em;
     justify-content: center;
     width: 100%;
 }
+ 
 
 .card_accomodation_img img
 {
     border: solid white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height:175px;
+    object-fit: cover;
+    height:130px;
     width:100%;
 }
 
@@ -506,27 +516,27 @@ font-size: 0.8em;
 {
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
 }
 
-.card_star
+.fa-star
+{
+color:#F2F2F2;
+font-size: 0.8em;
+padding-top: 20px;
+margin-top: auto;
+}
+
+.blue_star
 {
 color: #0065FC;
-font-size: 0.8em;
-padding-top: 10px;
-margin-top: auto;
-margin-bottom: 10px;
-}
-
-.popular_last_star, .accomodation_last_star
-{
-color: #DEEBFF;
 }
 
 .show_more_para
 {
     font-weight:bold;
     font-size: 1.2em;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 55px;
 }
 
@@ -537,7 +547,7 @@ color: #DEEBFF;
     font-size: 1.3em;
     color:black;
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-bottom: 20px;
 }
 
@@ -545,7 +555,8 @@ color: #DEEBFF;
 {
     display: flex;
     justify-content: space-between;
-    height: 525px;
+    height: 550px;
+    margin-left: 20px;
 }
 
 #activity_card1, #activity_card23, #activity_card4, #activity_card56
@@ -563,44 +574,51 @@ color: #DEEBFF;
     margin-right: 20px;
 }
 
+.card_info h3
+{
+font-weight: bold;
+font-size: 0.9em;
+white-space: nowrap;
+}
+
 /*********Taille des images*************/
 
 .big_card_activity img
 {
     width: 420px;
-    height: 470px;
+    height: 485px;
 }
 
 .top_card_activity23 img
 {
     width: 420px;
-    height: 230px;
+    height: 220px;
 }
 
 .bottom_card_activity23 img
 {
     width: 420px;
     height: 170px;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .big_card_activity2 img
 {
     width: 420px;
-    height: 470px;
+    height: 485px;
 }
 
 .top_card_activity56 img
 {
     width: 420px;
-    height: 205px;
+    height: 185px;
 }
 
 .bottom_card_activity56 img
 {
     width: 420px;
-    height: 195px;
-    margin-top: 15px;
+    height: 210px;
+    margin-top: 35px;
 }
 
 .link_card_activity img
@@ -613,10 +631,10 @@ color: #DEEBFF;
 
 .link_card_activity h3
 {
-font-weight: bold;
-font-size: 0.9em;
-margin-top: 10px;
-margin-left: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .activity_title_cards
@@ -711,44 +729,50 @@ nav ul
 
 nav li
 {
- flex: 1 ;
- justify-content: center;
-  margin-left: 0px;
-text-align: center;
-  font-size: 1.2em;
+    flex: 1 ;
+    justify-content: center;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 1.1em;
 }
     
 
 /**********mise en forme des liens MOBILE**************/
 
-.navbar_link1
+nav li
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+nav li:hover
+{
+    color: #0065FC;
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+}
+
+.navbar_link
 {
     border-top: none;
-    border-bottom: 2px solid #F2F2F2;
     margin-left: 35px;
-
 }
 
 .navbar_link2
 {
-    border-bottom:2px solid #F2F2F2;
     margin-right: 10px;
 
 }
 
-.navbar_link1:hover,.navbar_link2:hover
-{
-    color: #0065FC;
-    border-top:none;
-    border-bottom: 2px solid #0065FC;
-}
+
 
 
 /************MAIN version mobile*************/
 
 .info
 {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 h1
@@ -757,15 +781,17 @@ h1
     font-size: 1.5em;
     text-align: center;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 0px;
+    margin-right: 15px;
 }
 
 #para_header
 {
   
     text-align: center;
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 30px;
   
 }
 
@@ -774,12 +800,13 @@ h1
 #search_bar
 {
     display: flex;
-    margin-left: 25px;
-    padding-top: 20px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+   /* padding-top: 20px;*/
     width: 90%;
+    height: 50px;
+    border:;
 }
 
 .icon
@@ -790,9 +817,9 @@ h1
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     font-size: 20px;
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 
 }
 
@@ -839,7 +866,6 @@ h1
 #filter_content
 {
 
-    border: solid orange;
     margin-top: 10px;
     margin-left: 0px;
     width:100%;
@@ -849,6 +875,8 @@ h1
 #filter_title
 {
     width: 30%;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 #filter_buttons
@@ -861,31 +889,6 @@ h1
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 0px;
-}
-
-.eco
-{
-
-}
-
-.family
-{
-
-}
-
-.romantic
-{
-
-}
-
-.pets
-{
-
-}
-
-.filter_icon
-{
-
 }
 
 .span_filter_icon
@@ -902,6 +905,7 @@ h1
 #para_circle_icon
 {
     width: 89%;
+    margin-left: 20px;
 }
 
 .circle_icon
@@ -934,38 +938,53 @@ h1
     background-color: white;
 }
 
+.link_card_popular
+{
+    width: 90%;
+    height: 150px;
+    margin-left: 20px;
+}
+.card_popular_img img
+{
+    height: 145px;
+    width: 120px;
+}
+
+.card_info p
+{
+    white-space: nowrap;
+}
+
+.card_star
+{
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
 
 /*********************SECTION HEBERGEMENTS MOBILE*******************/
 
 #accomodation
 {
 background-color: white;
+height: 100%;
 }
 
-#accomodation_cards
+#accomodation_card
 {
     display: block;
-}
-
-#accommodation_cards_line1, #accommodation_cards_line2
-{
-    display: block;
-    width: 98%;
     padding-top: 3px;
-
 }
 
-#accomodation_card1, #accomodation_card2, #accomodation_card3,
-#accomodation_card4,#accomodation_card5,#accomodation_card6
+.accomodation_img_description_card
 {
-    width: 97%;
-    margin-top: 10px;
+    width: 100%;
 }
 
 
 .link_card_accomodation
 {
-margin-left: 10px;
+    margin-left: 15px;
 }
 
 .show_more_para
@@ -980,12 +999,18 @@ margin-left: 10px;
     display: block;
     flex-wrap: wrap;
     height: 100%;
+    margin-right: 10px;
 }
 
 
 #activity_card23, #activity_card4, #activity_card56
 {
-    margin-left: 10px;
+
+}
+
+#activity_card1
+{
+    margin-left: 0px;
 }
 
 #activity_card23, #activity_card56
@@ -999,27 +1024,18 @@ margin-left: 10px;
     width: 340px;
     height: 150px;
     margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 
 }
 
-#activity_card1
-{
-    margin-left: 5px;
-}
 
 .activity_title_cards
 {
     width:338px;
 }
 
-.big_card_activity img
-{
-  
-}
-
-.activity_card1 img
-{
-
-}
 
 }
