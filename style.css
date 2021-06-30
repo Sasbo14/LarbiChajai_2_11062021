@@ -542,6 +542,11 @@ color: #0065FC;
 
 /*******************************SECTION ACTIVITES****************/
 
+#activities
+{
+margin-top: 60px;
+}
+
 #activities h2
 {
     font-size: 1.3em;
@@ -973,6 +978,7 @@ h1
 #accomodation
 {
 background-color: white;
+border: none;
 height: 100%;
 }
 
@@ -1057,6 +1063,115 @@ footer
 .para_footer
 {
     width: 100%;
+}
+
+}
+
+/*******************version tablette************************************************/
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    body
+	{
+		margin: auto;
+	}
+
+    #navbar_register
+    {
+        width: 55%;
+        margin-right: 20px;
+        justify-content:flex-end;
+    }
+
+    #search_bar
+    {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 90%;
+    height: 50px;
+    }
+
+    #info_filter
+    {
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    #filter_content
+    {
+        width: 80%;
+    }
+
+    #filter_title
+    {
+    width: 30%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    }
+
+    #filter_buttons
+    {
+    flex-wrap: wrap;
+    }
+
+    #middle_section
+    {
+    display: block;
+    }
+
+    #most_popular, #accomodation
+    {
+    width: 99%;
+    border-radius: 0px;
+
+    }
+
+    #activity_content
+    {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+
+    }
+
+    #activity_card23, #activity_card56
+    {
+ 
+    display: flex;
+    }
+
+    #activity_card1 img, #activity_card4 img
+    {
+        width: 98%;
+    }
+
+    #activity_card1,#activity_card23, #activity_card4, #activity_card56
+    {
+        margin: 0;
+        padding: 0;
+        width:100%;
+    }
+
+    .card_activity_img img
+    {
+        width: 360px;
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    
+    }
+
+    .activity_title_cards
+{
+    width:auto;
 }
 
 }
