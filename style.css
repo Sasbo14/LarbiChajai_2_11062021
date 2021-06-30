@@ -551,7 +551,7 @@ color: #0065FC;
     margin-bottom: 20px;
 }
 
-#activity
+#activity_content
 {
     display: flex;
     justify-content: space-between;
@@ -653,27 +653,32 @@ footer
     display: flex;
     background-color: #F2F2F2;
     margin-top: 100px;
-
+    width: 100%;
+    height: 300px;
 
 }
 
 footer section 
 {
-    display: flex;
+width: 33%;
+padding-top: 40px;
+ /*   display: flex;
     flex-direction: column;
+*/
 }
   
 footer li 
 {
     list-style: none;
-    margin-left: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
     line-height: 25px;
 }
 
 footer h2 
 {
-    margin-left: 5px;
-    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -707,17 +712,19 @@ header{
 nav
 {
      
-       width:100%;
-       height: 50px;
-       margin-top: 20px;
-       padding-right: 0px;
+    width:100%;
+    height: 50px;
+    margin-top: 20px;
+    padding-right: 0px;
 }
  
-#navbar_register{
+#navbar_register
+{
         
-        width: 55%;
-        order: initial;
-        justify-content:flex-end;
+    margin-top: 15px;    
+    width: 55%;
+    order: initial;
+    justify-content:flex-end;
 }
 
 nav ul
@@ -806,7 +813,6 @@ h1
    /* padding-top: 20px;*/
     width: 90%;
     height: 50px;
-    border:;
 }
 
 .icon
@@ -994,7 +1000,7 @@ height: 100%;
 
 /******************************SECTION ACTIVITES MOBILE**************************/
 
-#activity
+#activity_content
 {
     display: block;
     flex-wrap: wrap;
@@ -1005,12 +1011,13 @@ height: 100%;
 
 #activity_card23, #activity_card4, #activity_card56
 {
-
+width: 20%;
 }
 
 #activity_card1
 {
     margin-left: 0px;
+    width: 20%;
 }
 
 #activity_card23, #activity_card56
@@ -1037,5 +1044,19 @@ height: 100%;
     width:338px;
 }
 
+/*********************************FOOTER MOBILE**************************************/
+
+footer
+{
+    display: block;
+    width: 98%;
+    height: 540px;
+    margin-top: 40px;
+}
+
+.para_footer
+{
+    width: 100%;
+}
 
 }
