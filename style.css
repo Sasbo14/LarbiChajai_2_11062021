@@ -274,13 +274,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
-  padding: 20px 8px;
+  padding: 5px 8px;
   white-space: nowrap;
 }
 
 #filter_title {
   width: 30%;
-  padding: 15px 15px;
+  padding: 5px 15px;
   color: black;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -337,7 +337,7 @@ main {
   display: flex;
   align-items: baseline;
   width: 89%;
-  padding: 0px 20px 30px 20px;
+  padding: 10px 20px 30px 20px;
 }
 
 .circle_icon {
@@ -670,6 +670,7 @@ footer h2 {
   #filter_section {
     align-items: baseline;
     margin-top: 20px;
+    padding-top: 10px;
     padding-left: 40px;
   }
 
@@ -699,6 +700,7 @@ footer h2 {
   }
 
   #para_circle_icon {
+    padding-top: 25px;
     padding-left: 55px;
     font-size: 1.2em;
   }
@@ -857,6 +859,7 @@ footer h2 {
 
   nav {
     width: 100%;
+    margin-top: 20px;
   }
 
   nav ul {
@@ -887,9 +890,9 @@ footer h2 {
     margin: 0px;
   }
 
-  #filter_section {
-    display: flex;
-  }
+  /*#filter_section {
+    white-space: none;
+  }*/
 
   #filter_title {
     width: 30%;
@@ -898,7 +901,7 @@ footer h2 {
   }
 
   #filter_buttons {
-    padding: 10px 40px;
+    padding: 10px 25px;
     flex-wrap: wrap;
     row-gap: 20px;
     column-gap: 20px;
@@ -909,6 +912,10 @@ footer h2 {
   }
 
   .button_forma > span {
+    padding: 10px 30px;
+  }
+
+  .family > span {
     padding: 10px 60px;
   }
 
