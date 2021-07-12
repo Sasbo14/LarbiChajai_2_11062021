@@ -566,8 +566,8 @@ footer h2 {
   font-weight: bold;
 }
 
-/*****version DESKTOP************/
-@media (min-width: 1024px) {
+/*****version DESKTOP***********************************************/
+@media screen and (min-width: 1024px) {
   header {
     align-items: center;
     flex-wrap: nowrap;
@@ -846,7 +846,7 @@ footer h2 {
 
 /*******************version tablette************************************************/
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     margin: auto;
   }
@@ -889,10 +889,6 @@ footer h2 {
     width: 100%;
     margin: 0px;
   }
-
-  /*#filter_section {
-    white-space: none;
-  }*/
 
   #filter_title {
     width: 30%;
