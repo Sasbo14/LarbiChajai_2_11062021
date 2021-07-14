@@ -925,6 +925,7 @@ footer h2 {
     border-radius: 20px;
     width: 34%;
     height: inherit;
+    margin-right: 40px;
     padding-bottom: 20px;
     display: block;
     order: 2;
