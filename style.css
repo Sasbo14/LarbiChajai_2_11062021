@@ -125,7 +125,6 @@ table {
 }
 
 /*********************DEBUT**********************/
-
 html {
   background-color: #fff;
 }
@@ -143,13 +142,12 @@ header {
 
 #navbar_logo {
   width: 40%;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 #logo {
   height: 50px;
   margin-bottom: 7px;
-  width: auto;
 }
 
 /*************Menu du header************************************/
@@ -159,6 +157,9 @@ nav {
 }
 
 #navbar_register {
+  position: relative;
+  top: 0px;
+  right: 0px;
   margin-top: 20px;
   margin-left: 100px;
 }
@@ -181,7 +182,7 @@ nav li {
 a {
   text-decoration: none;
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .navbar_link:active {
@@ -197,17 +198,17 @@ a {
 
 /************MAIN version mobile*************/
 #intro {
-  padding: 20px 20px;
+  padding: 20px 10px;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #intro > p {
   padding: 20px 20px 0px 0px;
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 /**************BARRE DE RECHERCHE MOBILE***************/
@@ -218,7 +219,7 @@ h1 {
   border: solid 2px #f2f2f2;
   border-left: none;
   padding: 0px;
-  margin: 20px;
+  margin: 20px 20px 20px 10px;
   margin-top: 15px;
   height: 55px;
   width: 90%;
@@ -284,13 +285,13 @@ main {
   color: black;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 #filter_buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /**********************Mise en forme du filtre***************************/
@@ -336,7 +337,7 @@ main {
 #para_circle_icon {
   display: flex;
   align-items: baseline;
-  width: 89%;
+  font-size: 0.82em;
   padding: 10px 20px 30px 20px;
 }
 
@@ -373,7 +374,7 @@ main {
   padding-top: 30px;
   margin-right: 20px;
   margin-bottom: 30px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-left: 20px;
   color: black;
   font-weight: bold;
@@ -385,7 +386,7 @@ main {
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 30px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: black;
   font-weight: bold;
 }
@@ -418,9 +419,8 @@ main {
 }
 
 .card_description {
-  width: 50%;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .card_info > h3 {
@@ -470,12 +470,11 @@ main {
   padding-bottom: 15px;
 }
 
-.card_accomodation_img img {
+.card_accomodation_img > img {
   border: solid white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
-  height: 130px;
   width: 98%;
 }
 
@@ -566,9 +565,82 @@ footer h2 {
   font-weight: bold;
 }
 
+/*******************version mobile S***********************************************/
+@media screen and (min-width: 320px) {
+  #para_circle_icon {
+    width: inherit;
+  }
+
+  #navbar_register {
+    margin-left: 70px;
+  }
+
+  .navbar_link {
+    padding: 15px 46px 15px 26px;
+  }
+
+  .button_forma {
+    font-size: 0.77em;
+  }
+
+  .card_info {
+    padding-left: 15px;
+  }
+
+  .card_info > h3 {
+    font-size: 0.85em;
+  }
+
+  .card_info > p {
+    font-size: 0.75em;
+  }
+
+  .star_card {
+    padding-left: 15px;
+  }
+
+  #activity_content {
+    padding: 0px;
+  }
+
+  .activity_card {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .activity_card img,
+  .activity_card_title {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  #navbar_register {
+    margin-left: 90px;
+  }
+
+  .navbar_link {
+    padding: 15px 72px 15px 26px;
+  }
+
+  .button_forma {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .navbar_link {
+    padding: 15px 96px 15px 26px;
+  }
+
+  .button_forma {
+    font-size: 1.1em;
+  }
+}
+
 /*******************version tablette************************************************/
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1900px) {
   body {
     margin: auto;
   }
@@ -580,7 +652,6 @@ footer h2 {
   }
 
   nav {
-    width: 100%;
     margin-top: 20px;
   }
 
@@ -595,7 +666,7 @@ footer h2 {
     width: 100%;
   }
   .navbar_link {
-    padding: 0px 150px 20px 150px;
+    padding: 0px 155px 20px 139px;
   }
 
   #search_bar {
@@ -638,7 +709,7 @@ footer h2 {
   }
 
   #para_circle_icon {
-    width: auto;
+    width: inherit;
     padding-left: 40px;
     font-size: 1.2em;
   }
@@ -669,11 +740,12 @@ footer h2 {
 
   #activity_content {
     display: flex;
+    padding-left: 20px;
   }
 
   .activity_card {
     display: flex;
-    width: 46%;
+    width: 48%;
   }
 
   .little_card {
@@ -682,11 +754,11 @@ footer h2 {
   }
 
   .activity_card_img_big > img {
-    height: 375px;
+    height: 377px;
   }
 
   .activity_card_title {
-    width: auto;
+    width: 78%;
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -708,33 +780,32 @@ footer h2 {
   }
 
   #logo {
-    width: 120px;
     height: 50px;
     margin-bottom: 7px;
   }
 
   /*************Menu du header************************************/
   nav {
-    padding-right: 50px;
+    padding: 5px 0px 0px 150px;
     margin-top: 0px;
     margin-bottom: 10px;
-    position: relative;
-    right: -350px;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   #navbar_register {
+    width: inherit;
     display: flex;
     order: 3;
     position: relative;
-    right: -410px;
+    right: 0px;
+    padding: 0px;
     margin-top: 0px;
     margin-left: 0px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .navbar_link {
-    padding-bottom: 0px;
+    padding: 30px 40px;
     border-bottom: none;
   }
 
@@ -760,7 +831,7 @@ footer h2 {
 
   /**************BARRE DE RECHERCHE Desktop***************/
   #search_bar {
-    width: 25%;
+    width: 40%;
     height: 50px;
     margin-left: 60px;
     margin-top: 10px;
@@ -801,6 +872,8 @@ footer h2 {
 
   /*******************FILTRES*************************/
   #filter_section {
+    flex-wrap: nowrap;
+
     align-items: baseline;
     margin-top: 20px;
     padding-top: 10px;
@@ -809,25 +882,25 @@ footer h2 {
 
   #filter_title {
     width: inherit;
-    margin-left: 10px;
-    margin-right: 20px;
-    font-size: 1.3em;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1em;
   }
 
   #filter_buttons {
     flex-wrap: nowrap;
+    margin-left: inherit;
   }
 
   .button_forma {
-    margin-left: 10px;
-    margin-right: 15px;
-    width: 35%;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
   }
 
   .button_forma > span {
-    padding: 0px 15px;
-    font-size: 1.3em;
+    padding: 0px 5px;
+    font-size: 0.8em;
     font-weight: bold;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
   }
@@ -841,47 +914,56 @@ footer h2 {
   /***************************Contenu MIDDLE SECTION**********************/
   #middle_content {
     display: flex;
-    padding: 0px 0px 0px 60px;
+    padding: 0px 0px 0px 40px;
     column-gap: 50px;
+    font-size: 0.9em;
+    width: inherit;
   }
 
   /***********************SECTION Les plus populaires DESKTOP****************/
   #section_right {
     border-radius: 20px;
     width: 34%;
+    height: inherit;
     padding-bottom: 20px;
     display: block;
     order: 2;
   }
 
   #most_popular_title {
-    padding: 30px 25px 0px 50px;
+    padding: 40px 0px 0px 10px;
   }
 
   #most_popular_title > i {
-    padding-right: 40px;
+    padding-right: 20px;
   }
   .popular_card {
-    padding: 0px 30px 10px 70px;
+    padding: 0px 30px 10px 30px;
   }
 
   .popular_card_link {
-    height: 170px;
-    width: 90%;
+    height: 110px;
+    width: 95%;
+  }
+
+  .popular_card_img {
+    width: 40%;
+    height: 100%;
   }
 
   .popular_card_img > img {
-    height: 165px;
-    width: 145px;
+    height: 96%;
+    width: 98%;
+    object-fit: cover;
   }
 
   .card_description {
-    width: 38%;
-    padding: 10px 5px;
+    width: 48%;
+    padding: 10px 10px;
   }
 
   .star_card {
-    margin-top: 60px;
+    margin-top: 25px;
   }
 
   /*********************SECTION HEBERGEMENTS*******************/
@@ -889,47 +971,61 @@ footer h2 {
     order: 1;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding-bottom: 20px;
-    width: 58%;
+    width: 65%;
   }
 
   #section_left > p {
-    padding: 20px 45px;
+    padding: 40px 20px 0px 20px;
   }
 
   #accomodation_card_container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    column-gap: 10px;
+    row-gap: 25px;
+    padding: 0px 10px 0px 10px;
   }
 
   .accomodation_card_content {
     width: 32%;
-    padding: 0px 0px;
+    padding: 0px;
+    margin: 0px;
   }
 
   .accomodation_card_link {
-    width: 90%;
-    height: 240px;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    padding-bottom: 5px;
+    width: 92%;
+    height: 167px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .card_accomodation_img {
+    height: 55%;
+  }
+
+  .card_accomodation_img > img {
+    object-fit: cover;
+    height: 90px;
+    width: 96%;
   }
 
   .accomodation_card_description {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    width: 55%;
-    height: 90px;
+    margin: 0px;
+    padding: 10px;
   }
 
   .accomodation_star_card {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   /*******************************SECTION ACTIVITES****************/
   #section_bottom {
+    width: inherit;
+    height: inherit;
     margin-top: 60px;
     padding-left: 20px;
   }
@@ -940,13 +1036,13 @@ footer h2 {
 
   #activity_content {
     display: flex;
+    flex-wrap: nowrap;
     margin-left: 0px;
-    padding: 0px 30px;
-    column-gap: 25px;
   }
 
   .activity_card {
-    width: 22%;
+    margin: 0px;
+    padding: 0px;
   }
 
   .title_top {
@@ -954,25 +1050,45 @@ footer h2 {
   }
 
   /*********Taille des images*************/
+  .activity_card {
+    width: 25%;
+  }
+
+  .activity_card > a {
+    width: 92%;
+  }
 
   .activity_card_img_big > img {
     object-fit: cover;
-    width: 410px;
-    height: 512px;
+    width: 215px;
+    height: 417px;
   }
 
   .activity_card_img > img {
-    height: 205px;
-    width: 410px;
+    height: 165px;
+    width: 215px;
   }
 
   .activity_card_title {
-    width: 410px;
+    width: 185px;
+    padding: 0px 30px 25px 0px;
+    margin: 0px;
+    font-size: 0.8em;
+  }
+
+  .title_top {
+    margin-bottom: 25px;
   }
 
   /*********************************FOOTER**************************************/
   footer {
     display: flex;
     padding: 40px 60px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  nav {
+    padding: 5px 0px 0px 300px;
   }
 }
