@@ -461,21 +461,20 @@ main {
 
 .accomodation_card_link {
   display: block;
+  border: solid white;
   border-radius: 20px;
   box-shadow: 5px 5px 20px gainsboro;
   background-color: white;
-  width: 100%;
   height: 170px;
   padding-bottom: 15px;
 }
 
 .accomodation_card_link > img {
-  border: solid white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
   height: 60%;
-  width: 98%;
+  width: 100%;
 }
 
 .accomodation_card_description {
@@ -956,7 +955,6 @@ footer h2 {
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
-    width: 25%;
   }
 
   .button_forma > span {
@@ -1063,7 +1061,6 @@ footer h2 {
   .accomodation_card_link > img {
     object-fit: cover;
     height: 55%;
-    width: 96%;
   }
 
   .accomodation_card_description {
