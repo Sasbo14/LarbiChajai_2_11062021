@@ -471,7 +471,7 @@ main {
 
 .accomodation_card_link {
   display: block;
-  border: solid white;
+  border: solid transparent;
   border-radius: 20px;
   box-shadow: 5px 5px 20px gainsboro;
   background-color: white;
@@ -629,7 +629,7 @@ footer h2 {
   }
 }
 
-@media screen and (min-width: 375px) 
+@media screen and (min-width: 375px) {
   .button_forma {
     font-size: 1em;
   }
@@ -692,7 +692,8 @@ footer h2 {
     row-gap: 20px;
     column-gap: 20px;
   }
-  .button_forma{
+
+  .button_forma {
     font-size: 1em;
   }
 
@@ -773,8 +774,8 @@ footer h2 {
     padding-right: 35px;
   }
 
-  .big_card{
-margin-bottom: 15px;
+  .big_card {
+    margin-bottom: 15px;
   }
 
   footer {
