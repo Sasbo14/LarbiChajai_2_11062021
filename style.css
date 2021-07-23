@@ -131,6 +131,7 @@ html {
 
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
+  max-width: 1600px;
 }
 
 /********************header**********************/
@@ -1115,7 +1116,7 @@ footer h2 {
     padding: 5px 0px 0px 25%;
   }
 }
-@media screen and (min-width: 1400px) {
-  nav {
-    padding: 5px 0px 0px 28%;
-  }
+@media screen and (min-width: 1400px);
+nav {
+  padding: 5px 0px 0px 28%;
+}
