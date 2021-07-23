@@ -791,7 +791,7 @@ footer h2 {
   header {
     align-items: center;
     flex-wrap: nowrap;
-    padding: 20px 40px;
+    padding: 0px 40px 20px 40px;
   }
 
   #logo {
@@ -1119,4 +1119,3 @@ footer h2 {
   nav {
     padding: 5px 0px 0px 28%;
   }
-}
